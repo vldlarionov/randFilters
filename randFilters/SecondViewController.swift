@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SecondViewController: UIViewController {
 
     
     @IBOutlet weak var photoImageView: UIImageView!
@@ -26,7 +26,6 @@ class ViewController: UIViewController {
     }
     
     
- 
     @IBAction func showNotFilteredImage(_ sender: Any) {
         
         photoImageView.image = #imageLiteral(resourceName: "cat.jpg")
