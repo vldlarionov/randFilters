@@ -11,7 +11,10 @@ import UIKit
 class ImageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
-
+    var context : CIContext!
+    var filter : CIFilter!
+    var beginImage : CIImage!
+    
     @IBOutlet weak var myImageView: UIImageView!
     
     override func viewDidLoad() {
@@ -45,13 +48,14 @@ class ImageViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         myImageView.image = image
+        self.dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true, completion: nil)
-    }
+    /*func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
