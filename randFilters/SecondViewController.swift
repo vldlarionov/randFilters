@@ -16,14 +16,14 @@ class SecondViewController: UIViewController {
     let contex = CIContext(options: nil)
     
     
-    @IBAction func applyFilter(_ sender: Any) {
+   /* @IBAction func applyFilter(_ sender: Any) {
         
         let inputImage = CIImage(image: photoImageView.image!)
         let randomColor = [kCIInputAngleKey: (Double(arc4random_uniform(314)) / 100)]
         let filteredImage = inputImage?.applyingFilter("CIHueAdjust", parameters: randomColor)
         let renderedImage = contex.createCGImage(filteredImage!, from: filteredImage!.extent)
         photoImageView.image = UIImage(cgImage: renderedImage!)
-    }
+    }*/
     
     
     @IBAction func showNotFilteredImage(_ sender: Any) {

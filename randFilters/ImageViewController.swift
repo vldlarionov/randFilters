@@ -7,39 +7,52 @@
 //
 
 import UIKit
+import Photos
 
 class ImageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    let imagePickerController = UIImagePickerController()
     
-    var context : CIContext!
+    var context = CIContext(options: nil)
     var filter : CIFilter!
     var beginImage : CIImage!
+    
+    @IBAction func applyFilter(_ sender: Any) {
+        
+        let inputImage = CIImage(image: myImageView.image!)
+        let randomColor = [kCIInputAngleKey: (Double(arc4random_uniform(314)) / 100)]
+        let filteredImage = inputImage?.applyingFilter("CIHueAdjust", parameters: randomColor)
+        let renderedImage = context.createCGImage(filteredImage!, from: filteredImage!.extent)
+        self.myImageView.image = UIImage(cgImage: renderedImage!)
+        
+    }
     
     @IBOutlet weak var myImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imagePickerController.delegate = self
         // Do any additional setup after loading the view.
     }
 
+    
     @IBAction func chooseImage(_ sender: Any) {
         
-        let imagePickerController = UIImagePickerController()
-        imagePickerController.delegate = self
+        
+        
         
         let actionSheet = UIAlertController(title: "Photo source", message: "Image source", preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
-                imagePickerController.sourceType = .camera
-                self.present(imagePickerController, animated: true, completion: nil)
+                self.imagePickerController.sourceType = .camera
+                self.present(self.imagePickerController, animated: true, completion: nil)
             } else {
                 print("Camera is not available")
             }
             }))
         actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in
-            imagePickerController.sourceType = .photoLibrary
-            self.present(imagePickerController, animated: true, completion: nil)
+            self.imagePickerController.sourceType = .photoLibrary
+            self.present(self.imagePickerController, animated: true, completion: nil)
         }))
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil
         ))
@@ -52,6 +65,7 @@ class ImageViewController: UIViewController, UIImagePickerControllerDelegate, UI
         myImageView.image = image
         self.dismiss(animated: true, completion: nil)
     }
+    
     
     /*func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)

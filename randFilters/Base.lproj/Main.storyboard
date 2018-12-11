@@ -32,6 +32,14 @@
                                     <action selector="chooseImage:" destination="2AW-VD-bRf" eventType="touchUpInside" id="z9f-q6-HJW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td4-9w-9q1">
+                                <rect key="frame" x="20" y="375" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="apply"/>
+                                <connections>
+                                    <action selector="applyFilter:" destination="2AW-VD-bRf" eventType="touchUpInside" id="cxM-pG-5cS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tj0-oH-ABW"/>
@@ -43,7 +51,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRi-qQ-ZRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="pXu-m2-g6H" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-657" y="118"/>
+            <point key="canvasLocation" x="-658.39999999999998" y="117.39130434782609"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="tne-QT-ifu">
