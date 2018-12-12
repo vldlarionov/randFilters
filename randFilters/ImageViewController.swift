@@ -8,6 +8,7 @@
 
 import UIKit
 import Photos
+import AssetsLibrary
 
 class ImageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -36,10 +37,19 @@ class ImageViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
 
     
+    @IBAction func saveImage(_ sender: Any) {
+        
+        let imageData = UIImagePNGRepresentation(myImageView.image!)
+        let compressedImage = UIImage(data: imageData!)
+        UIImageWriteToSavedPhotosAlbum(compressedImage!, nil, nil, nil)
+        
+        let alert = UIAlertController(title: "Saved", message: "Your image has been saved", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
     @IBAction func chooseImage(_ sender: Any) {
-        
-        
-        
         
         let actionSheet = UIAlertController(title: "Photo source", message: "Image source", preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in

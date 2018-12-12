@@ -40,6 +40,14 @@
                                     <action selector="applyFilter:" destination="2AW-VD-bRf" eventType="touchUpInside" id="cxM-pG-5cS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u6-F4-JbJ">
+                                <rect key="frame" x="20" y="435" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveImage:" destination="2AW-VD-bRf" eventType="touchUpInside" id="rvJ-2U-Mao"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tj0-oH-ABW"/>
