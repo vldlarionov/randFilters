@@ -18,6 +18,11 @@ class ImageViewController: UIViewController, UIImagePickerControllerDelegate, UI
     var filter : CIFilter!
     var beginImage : CIImage!
     
+    @IBOutlet weak var applyFiltersButton: UIButton!
+    @IBOutlet weak var saveImageButton: UIButton!
+    
+    
+    
     @IBAction func applyFilter(_ sender: Any) {
         
         let inputImage = CIImage(image: myImageView.image!)
@@ -74,6 +79,9 @@ class ImageViewController: UIViewController, UIImagePickerControllerDelegate, UI
         let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         myImageView.image = image
         self.dismiss(animated: true, completion: nil)
+        applyFiltersButton.isHidden = false
+        saveImageButton.isHidden = false
+        
     }
     
     

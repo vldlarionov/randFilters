@@ -32,7 +32,7 @@
                                     <action selector="chooseImage:" destination="2AW-VD-bRf" eventType="touchUpInside" id="z9f-q6-HJW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td4-9w-9q1">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td4-9w-9q1">
                                 <rect key="frame" x="20" y="375" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="apply"/>
@@ -40,7 +40,7 @@
                                     <action selector="applyFilter:" destination="2AW-VD-bRf" eventType="touchUpInside" id="cxM-pG-5cS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u6-F4-JbJ">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u6-F4-JbJ">
                                 <rect key="frame" x="20" y="435" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
@@ -53,7 +53,9 @@
                         <viewLayoutGuide key="safeArea" id="tj0-oH-ABW"/>
                     </view>
                     <connections>
+                        <outlet property="applyFiltersButton" destination="Td4-9w-9q1" id="hc5-xK-HCK"/>
                         <outlet property="myImageView" destination="oyA-Ac-XqZ" id="ptl-lA-rmn"/>
+                        <outlet property="saveImageButton" destination="4u6-F4-JbJ" id="HCB-Ul-l6y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRi-qQ-ZRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
