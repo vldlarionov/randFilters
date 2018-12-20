@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyA-Ac-XqZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="317"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="545"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -33,17 +33,17 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td4-9w-9q1">
-                                <rect key="frame" x="20" y="375" width="101" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="apply"/>
+                                <rect key="frame" x="16" y="547" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="dices.png"/>
                                 <connections>
                                     <action selector="applyFilter:" destination="2AW-VD-bRf" eventType="touchUpInside" id="cxM-pG-5cS"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u6-F4-JbJ">
-                                <rect key="frame" x="20" y="435" width="101" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
+                                <rect key="frame" x="299" y="543" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="verified.png"/>
                                 <connections>
                                     <action selector="saveImage:" destination="2AW-VD-bRf" eventType="touchUpInside" id="rvJ-2U-Mao"/>
                                 </connections>
@@ -108,5 +108,7 @@
     </scenes>
     <resources>
         <image name="cat.jpg" width="220" height="413"/>
+        <image name="dices.png" width="64" height="64"/>
+        <image name="verified.png" width="64" height="64"/>
     </resources>
 </document>

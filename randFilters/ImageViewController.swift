@@ -62,7 +62,10 @@ class ImageViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 self.imagePickerController.sourceType = .camera
                 self.present(self.imagePickerController, animated: true, completion: nil)
             } else {
-                print("Camera is not available")
+                let alert = UIAlertController(title: "Error", message: "Camera is not available ", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
             }
             }))
         actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in
