@@ -11,6 +11,7 @@
 		865B744E21CB307800A00AD7 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 865B744D21CB307800A00AD7 /* save.png */; };
 		865B745021CB333700A00AD7 /* dices.png in Resources */ = {isa = PBXBuildFile; fileRef = 865B744F21CB333700A00AD7 /* dices.png */; };
 		865B745221CB334300A00AD7 /* verified.png in Resources */ = {isa = PBXBuildFile; fileRef = 865B745121CB334300A00AD7 /* verified.png */; };
+		86648EB721E429FC00DA0ABD /* Screen Shot 2019-01-07 at 7.43.52 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 86648EB621E429FC00DA0ABD /* Screen Shot 2019-01-07 at 7.43.52 PM.png */; };
 		867BD08921B8A99F0069DC56 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BD08821B8A99F0069DC56 /* ImageViewController.swift */; };
 		86FADF0D218A6FE7003815AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FADF0C218A6FE7003815AC /* AppDelegate.swift */; };
 		86FADF12218A6FE7003815AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FADF10218A6FE7003815AC /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		865B744D21CB307800A00AD7 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = save.png; path = ../../../Desktop/save.png; sourceTree = "<group>"; };
 		865B744F21CB333700A00AD7 /* dices.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dices.png; path = ../../../Desktop/dices.png; sourceTree = "<group>"; };
 		865B745121CB334300A00AD7 /* verified.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = verified.png; path = ../../../Desktop/verified.png; sourceTree = "<group>"; };
+		86648EB621E429FC00DA0ABD /* Screen Shot 2019-01-07 at 7.43.52 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2019-01-07 at 7.43.52 PM.png"; path = "../../../Desktop/Screen Shot 2019-01-07 at 7.43.52 PM.png"; sourceTree = "<group>"; };
 		867BD08821B8A99F0069DC56 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		86FADF09218A6FE7003815AC /* randFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = randFilters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FADF0C218A6FE7003815AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				865B744B21CB2F2800A00AD7 /* DICESNAKEEYES.jpg */,
 				865B744F21CB333700A00AD7 /* dices.png */,
+				86648EB621E429FC00DA0ABD /* Screen Shot 2019-01-07 at 7.43.52 PM.png */,
 				865B744D21CB307800A00AD7 /* save.png */,
 				865B745121CB334300A00AD7 /* verified.png */,
 				86FADF0C218A6FE7003815AC /* AppDelegate.swift */,
@@ -136,6 +139,7 @@
 			files = (
 				86FADF17218A6FEA003815AC /* LaunchScreen.storyboard in Resources */,
 				86FADF14218A6FEA003815AC /* Assets.xcassets in Resources */,
+				86648EB721E429FC00DA0ABD /* Screen Shot 2019-01-07 at 7.43.52 PM.png in Resources */,
 				865B744E21CB307800A00AD7 /* save.png in Resources */,
 				865B744C21CB2F2800A00AD7 /* DICESNAKEEYES.jpg in Resources */,
 				865B745221CB334300A00AD7 /* verified.png in Resources */,
