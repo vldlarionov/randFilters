@@ -13,11 +13,9 @@
 		865B745221CB334300A00AD7 /* verified.png in Resources */ = {isa = PBXBuildFile; fileRef = 865B745121CB334300A00AD7 /* verified.png */; };
 		867BD08921B8A99F0069DC56 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BD08821B8A99F0069DC56 /* ImageViewController.swift */; };
 		86FADF0D218A6FE7003815AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FADF0C218A6FE7003815AC /* AppDelegate.swift */; };
-		86FADF0F218A6FE7003815AC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FADF0E218A6FE7003815AC /* SecondViewController.swift */; };
 		86FADF12218A6FE7003815AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FADF10218A6FE7003815AC /* Main.storyboard */; };
 		86FADF14218A6FEA003815AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FADF13218A6FEA003815AC /* Assets.xcassets */; };
 		86FADF17218A6FEA003815AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FADF15218A6FEA003815AC /* LaunchScreen.storyboard */; };
-		86FADF1F218A70F3003815AC /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86FADF1E218A70F3003815AC /* cat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +26,10 @@
 		867BD08821B8A99F0069DC56 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		86FADF09218A6FE7003815AC /* randFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = randFilters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FADF0C218A6FE7003815AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86FADF0E218A6FE7003815AC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		86FADF11218A6FE7003815AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86FADF13218A6FEA003815AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86FADF16218A6FEA003815AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86FADF18218A6FEA003815AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86FADF1E218A70F3003815AC /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cat.jpg; path = ../../../Desktop/cat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +66,7 @@
 				865B744F21CB333700A00AD7 /* dices.png */,
 				865B744D21CB307800A00AD7 /* save.png */,
 				865B745121CB334300A00AD7 /* verified.png */,
-				86FADF1E218A70F3003815AC /* cat.jpg */,
 				86FADF0C218A6FE7003815AC /* AppDelegate.swift */,
-				86FADF0E218A6FE7003815AC /* SecondViewController.swift */,
 				86FADF10218A6FE7003815AC /* Main.storyboard */,
 				867BD08821B8A99F0069DC56 /* ImageViewController.swift */,
 				86FADF13218A6FEA003815AC /* Assets.xcassets */,
@@ -144,7 +138,6 @@
 				86FADF14218A6FEA003815AC /* Assets.xcassets in Resources */,
 				865B744E21CB307800A00AD7 /* save.png in Resources */,
 				865B744C21CB2F2800A00AD7 /* DICESNAKEEYES.jpg in Resources */,
-				86FADF1F218A70F3003815AC /* cat.jpg in Resources */,
 				865B745221CB334300A00AD7 /* verified.png in Resources */,
 				86FADF12218A6FE7003815AC /* Main.storyboard in Resources */,
 				865B745021CB333700A00AD7 /* dices.png in Resources */,
@@ -158,7 +151,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86FADF0F218A6FE7003815AC /* SecondViewController.swift in Sources */,
 				867BD08921B8A99F0069DC56 /* ImageViewController.swift in Sources */,
 				86FADF0D218A6FE7003815AC /* AppDelegate.swift in Sources */,
 			);

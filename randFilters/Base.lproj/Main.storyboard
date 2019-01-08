@@ -21,12 +21,15 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyA-Ac-XqZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="545"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.54683643579483032" green="0.91598713397979736" blue="0.78431218862533569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-Ss-m5V">
                                 <rect key="frame" x="138" y="617" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Choose Image"/>
+                                <color key="backgroundColor" red="0.54683643579483032" green="0.91598713397979736" blue="0.78431218862533569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Choose Image">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="chooseImage:" destination="pXu-m2-g6H" eventType="touchUpInside" id="w99-QD-6Uc"/>
                                     <action selector="chooseImage:" destination="2AW-VD-bRf" eventType="touchUpInside" id="z9f-q6-HJW"/>
@@ -49,7 +52,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.54683643579483032" green="0.91598713397979736" blue="0.78431218862533569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="tj0-oH-ABW"/>
                     </view>
                     <connections>
@@ -63,51 +66,8 @@
             </objects>
             <point key="canvasLocation" x="-658.39999999999998" y="117.39130434782609"/>
         </scene>
-        <!--Second View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="SecondViewController" customModule="randFilters" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cG7-Gi-3kQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfS-Ka-9yO">
-                                <rect key="frame" x="158" y="617" width="77" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98431372549999996" green="0.0" blue="0.04603914596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="apply"/>
-                                <connections>
-                                    <action selector="applyFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbh-Bv-fdN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSH-aW-ALy">
-                                <rect key="frame" x="271" y="617" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.010072246450000001" green="1" blue="0.091433913130000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="default"/>
-                                <connections>
-                                    <action selector="showNotFilteredImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YIv-9f-rLn"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <connections>
-                        <outlet property="photoImageView" destination="cG7-Gi-3kQ" id="9aW-aG-c7Q"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="116" y="118.29085457271366"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="cat.jpg" width="220" height="413"/>
         <image name="dices.png" width="64" height="64"/>
         <image name="verified.png" width="64" height="64"/>
     </resources>
